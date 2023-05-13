@@ -1,0 +1,10 @@
+START
+Input: array A of n integers, integer k
+1. Check if k is valid (1 ≤ k ≤ n), if not return error
+2. Set pivot = last element of A
+3. Partition the array A into two subarrays L and R such that all elements in L ≤ pivot and all elements in R > pivot
+4. Compute the size m of the subarray R
+5. If m == k-1, return pivot as the kth largest element
+6. If m > k-1, recursively find the kth largest element in R
+7. If m < k-1, recursively find the (k-m-1)th largest element in L
+END

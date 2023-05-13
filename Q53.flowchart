@@ -1,0 +1,6 @@
+Given two integers, a and b
+Check if a is equal to b. If yes, return a as the GCD.
+If a is greater than b, divide a by b and get the remainder. Set a to be the value of b and b to be the remainder.
+If b is greater than a, divide b by a and get the remainder. Set b to be the value of a and a to be the remainder.
+Recursively call the GCD function with the new values of a and b as parameters.
+Continue until a and b are equal, then return a as the GCD.

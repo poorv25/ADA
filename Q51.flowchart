@@ -1,0 +1,11 @@
+START
+Input n
+If n is 0 or 1
+    Return 1
+Else
+    Set a = n/2
+    Set b = n - a
+    Set x = divide_and_conquer_factorial(a)
+    Set y = divide_and_conquer_factorial(b)
+    Return x * y
+END

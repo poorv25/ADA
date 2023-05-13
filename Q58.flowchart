@@ -1,0 +1,5 @@
+Divide both large integers into smaller integers of equal length (or roughly equal length if one integer is longer than the other).
+
+Recursively multiply the smaller integers using the same divide-and-conquer algorithm.
+
+Combine the results of the smaller multiplications to obtain the final product.

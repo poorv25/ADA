@@ -1,0 +1,4 @@
+Divide the input array into two halves.
+Recursively compute the maximum subarray sum for each half of the array.
+Compute the maximum subarray sum that crosses the midpoint of the array. This can be done by finding the maximum subarray sum starting from the midpoint and working towards the left, and then finding the maximum subarray sum starting from the midpoint and working towards the right.
+Return the maximum of the three subarray sums computed in steps 2 and 3.

@@ -1,0 +1,39 @@
+Start
+|
+|___Split the points into left and right halves
+|        |
+|        |___Find the closest pair in the left half recursively
+|        |        |
+|        |        |___If there are 0 or 1 points, return infinity
+|        |        |
+|        |        |___If there are 2 points, return their distance
+|        |        |
+|        |        |___If there are more than 2 points, divide and conquer:
+|        |        |        |
+|        |        |        |___Find the closest pair in the left half recursively
+|        |        |        |
+|        |        |        |___Find the closest pair in the right half recursively
+|        |        |        |
+|        |        |        |___Determine the minimum distance among the two pairs
+|        |        |
+|        |___Find the closest pair in the right half recursively
+|                 |
+|                 |___If there are 0 or 1 points, return infinity
+|                 |
+|                 |___If there are 2 points, return their distance
+|                 |
+|                 |___If there are more than 2 points, divide and conquer:
+|                 |        |
+|                 |        |___Find the closest pair in the left half recursively
+|                 |        |
+|                 |        |___Find the closest pair in the right half recursively
+|                 |        |
+|                 |        |___Determine the minimum distance among the two pairs
+|                 |
+|___Find the closest pair with one point in the left half and one point in the right half
+         |
+         |___Sort the points by y-coordinate
+         |
+         |___Iterate through the points and find the closest pair with one point in the left half and one point in the right half
+|
+End

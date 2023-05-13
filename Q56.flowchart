@@ -1,0 +1,6 @@
+Start with two sorted arrays A and B
+Set up a new array C to hold the merged elements of A and B
+Find the midpoints of A and B
+Recursively merge the left half of A with the left half of B
+Recursively merge the right half of A with the right half of B
+Merge the two halves obtained in steps 4 and 5 into the final sorted array C

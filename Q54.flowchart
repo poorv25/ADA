@@ -1,0 +1,34 @@
+Start
+|
+v
+If the two points are the same
+|
+v
+Return 0
+|
+v
+Divide the two points in half along the x-axis
+|
+v
+Recursively calculate the distance between the two points on the left
+|
+v
+Recursively calculate the distance between the two points on the right
+|
+v
+Find the minimum distance between the left and right points
+|
+v
+Find the strip in the middle where the distance is less than the minimum
+|
+v
+Sort the strip points by y-coordinate
+|
+v
+Iterate through the points in the strip, comparing the distance between each pair of points
+|
+v
+Return the minimum distance found in the strip
+|
+v
+End
