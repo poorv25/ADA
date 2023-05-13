@@ -1,0 +1,24 @@
+START
+
+Input string A and string B
+
+Create a matrix DP of size (n+1) x (m+1)
+
+Set maximum_length to 0 and initialize maximum_length_i, maximum_length_j to -1
+
+For i from 0 to n do
+    For j from 0 to m do
+        If i = 0 or j = 0 then
+            DP[i][j] = 0
+        Else if A[i-1] = B[j-1] then
+            DP[i][j] = DP[i-1][j-1] + 1
+            If DP[i][j] > maximum_length then
+                maximum_length = DP[i][j]
+                maximum_length_i = i
+                maximum_length_j = j
+        Else
+            DP[i][j] = 0
+
+Output substring A[maximum_length_i - maximum_length : maximum_length_i]
+
+END
