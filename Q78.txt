@@ -1,0 +1,8 @@
+Initialize a set of visited vertices and a priority queue of edges.
+Select an arbitrary vertex as the starting vertex and add it to the visited set.
+For each adjacent edge of the starting vertex, add it to the priority queue.
+While the priority queue is not empty:
+  a. Remove the edge with the lowest weight from the priority queue.
+  b. If both vertices of the edge are not visited, add the edge to the minimum spanning tree and mark the vertices as visited.
+  c. For each adjacent edge of the newly added vertex, add it to the priority queue if the adjacent vertex is not visited.
+Output the minimum spanning tree.

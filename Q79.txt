@@ -1,0 +1,15 @@
+Start
+
+Sort the intervals in ascending order based on their finishing times
+
+Select the first interval as the current interval
+
+For each remaining interval, do the following:
+
+    If the start time of the interval is greater than or equal to the finish time of the current interval, select it as the new current interval
+
+End
+
+Output the selected intervals
+
+End

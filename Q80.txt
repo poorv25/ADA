@@ -1,0 +1,26 @@
+START
+
+Read the weight capacity of the knapsack (W) and the number of items (n)
+
+Create an array of items with their weights (w) and values (v)
+
+Calculate the value per unit weight (v/w) for each item
+
+Sort the items in decreasing order of value per unit weight
+
+Initialize the total value (V) and remaining capacity of the knapsack (R) to 0
+
+FOR i = 1 to n:
+    IF R + w[i] <= W:
+        Add the entire item i to the knapsack
+        V += v[i]
+        R += w[i]
+    ELSE:
+        Add a fractional amount of item i to the knapsack
+        V += (W - R) * (v[i] / w[i])
+        R = W
+        BREAK
+
+Display the total value (V) of the items in the knapsack
+
+END
