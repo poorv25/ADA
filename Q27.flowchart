@@ -1,0 +1,11 @@
+START
+Get the array of values to search
+Get the value to search for
+
+FOR each element in the array
+    IF the element is equal to the search value
+        Return the index of the element
+    END IF
+END FOR
+
+Return "Value not found"

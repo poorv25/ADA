@@ -1,0 +1,15 @@
+START
+Get the array of values to sort
+Set n to be the length of the array
+
+IF n is less than or equal to 1
+    RETURN the array as sorted
+
+ELSE
+    Divide the array into two halves, left and right
+    Recursively sort the left half
+    Recursively sort the right half
+    Merge the sorted left and right halves into a single sorted array
+    RETURN the merged array
+
+END IF

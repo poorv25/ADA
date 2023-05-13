@@ -1,0 +1,15 @@
+START
+Get the array of values to sort
+Set n to be the length of the array
+
+FOR i from 0 to n-1
+    Set min_index to i
+    FOR j from i+1 to n-1
+        IF the element at index j is less than the element at index min_index
+            Set min_index to j
+    IF min_index is not i
+        Swap the elements at indices i and min_index
+
+END FOR
+
+Return the sorted array

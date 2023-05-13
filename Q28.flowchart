@@ -1,0 +1,36 @@
+START
+Initialize the hash table with an array of empty linked lists
+Get the key-value pair to insert into the hash table
+
+Calculate the hash value for the key
+Locate the linked list at the hash value in the hash table
+
+IF the linked list is empty
+    Create a new node with the key-value pair
+    Insert the node at the head of the linked list
+ELSE
+    Traverse the linked list to find if the key already exists
+    IF the key is found
+        Update the value for the key
+    ELSE
+        Create a new node with the key-value pair
+        Insert the node at the end of the linked list
+    END IF
+END IF
+
+Get the key to search for in the hash table
+Calculate the hash value for the key
+Locate the linked list at the hash value in the hash table
+
+IF the linked list is empty
+    Return "Key not found"
+ELSE
+    Traverse the linked list to find the key
+    IF the key is found
+        Return the value associated with the key
+    ELSE
+        Return "Key not found"
+    END IF
+END IF
+
+END

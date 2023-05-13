@@ -1,0 +1,11 @@
+START
+Get the array of values to sort
+Set the low index to 0 and the high index to the length of the array minus 1
+
+IF the low index is less than the high index
+    Partition the array into two sub-arrays: left and right
+    Set a pivot element
+    Sort the left sub-array using QuickSort recursively
+    Sort the right sub-array using QuickSort recursively
+
+END IF

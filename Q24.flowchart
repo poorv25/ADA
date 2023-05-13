@@ -1,0 +1,15 @@
+START
+Get the array of values to sort
+Set n to be the length of the array
+
+FOR i from 1 to n-1
+    Set key to the value at index i
+    Set j to be i-1
+    WHILE j is greater than or equal to 0 and the value at index j is greater than key
+        Set the value at index j+1 to be the value at index j
+        Decrement j
+    Set the value at index j+1 to be key
+
+END FOR
+
+Return the sorted array

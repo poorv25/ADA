@@ -1,0 +1,15 @@
+START
+Get the array of values to sort
+Set n to be the length of the array
+Set swapped to True
+
+WHILE swapped is True
+    Set swapped to False
+    FOR i from 1 to n-1
+        IF the element at index i-1 is greater than the element at index i
+            Swap the elements at indices i-1 and i
+            Set swapped to True
+
+END WHILE
+
+Return the sorted array

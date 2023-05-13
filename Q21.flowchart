@@ -1,0 +1,17 @@
+START
+Get the sorted array and the target value
+Set left pointer to 0
+Set right pointer to the last index of the array
+
+WHILE left pointer is less than or equal to right pointer
+    Calculate the middle index: (left pointer + right pointer) / 2
+    If the middle element is equal to the target value
+        Return the middle index as the result
+    If the middle element is greater than the target value
+        Set right pointer to middle index - 1
+    If the middle element is less than the target value
+        Set left pointer to middle index + 1
+
+END WHILE
+
+Return -1 to indicate target value was not found
